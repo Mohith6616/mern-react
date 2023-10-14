@@ -1,0 +1,232 @@
+body{
+    background-color: rgb(39, 38, 38);
+}
+h1{
+    color: rgba(237, 13, 13, 0.647);
+    font-size: 40px;
+    text-align: center;
+}
+h3{
+    color:green;
+    text-decoration:underline;
+    text-decoration-color: rgb(0, 128, 17);
+}
+h4{
+    color:white;
+    text-decoration:underline;
+    text-decoration-color: white;
+}
+p{
+    color: aqua;
+}
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image1{
+    max-width: 35%;
+    max-height: 300px;
+}
+.card {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.body {
+    padding: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    width: 120px;
+    font-size: 16px;
+}
+
+.skill-level {
+    width: 160px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.skill-percent {
+    background-color: #333;
+    height: 100%;
+}
+.skill-percent-number {
+    margin-left: 20px;
+    font-size: 16px;
+}
+.project_card {
+    position: relative;
+    width: 700px;
+    aspect-ratio: 16/9;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project_card svg {
+    width: 100%;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__image {
+    object-fit: cover;
+}
+
+.project_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project_card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+.project_card:hover svg {
+    scale: 0;
+}
+.card__description {
+    margin: 10px 0 10px;
+    font-size: 20px;
+    color: #777;
+    line-height: 1.4;
+}
+.card__button {
+    padding: 15px;
+    border-radius: 8px;
+    background: #777;
+    border: none;
+    color: white;
+}
+.secondary {
+    background: transparent;
+    color: #777;
+    border: 1px solid #777;
+}
+.button {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -4px;
+    top: -1px;
+    margin: auto;
+    width: 128px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+}
+
+.button:hover::after {
+    filter: blur(30px);
+}
+
+.button:hover::before {
+    transform: rotate(-180deg);
+}
+
+.button:active::before {
+    scale: 0.7;
+}
+.align h3{
+    color: brown;
+    text-decoration-color: brown;
+    text-align: end;
+}
+.align_center{
+    color: white;
+    text-align: end;
+}
+.color{
+    color: white;
+    padding-left: 5px;
+}
+.ninty{
+    width: 90%;
+}
+.eighty{
+    width:80%;
+}
+.eighty-five{
+    width:85%;
+}
+.ninty-five{
+    width: 95%;
+}
